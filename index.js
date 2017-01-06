@@ -14,13 +14,13 @@ var data = {
     "nascar": "Off"
 };
 // This does my job
-pdfFiller.fillForm(sourcePDF, destinationPDF, data, function (err) {
-    if (err) throw err;
-    console.log("In callback (we're done).");
-});
+// pdfFiller.fillForm(sourcePDF, destinationPDF, data, function (err) {
+//     if (err) throw err;
+//     console.log("In callback (we're done).");
+// });
 
 // I want this function 
-pdfFiller.addWatermark(sourcePDF, watermarkPDF, destinationPDF, data, function (err) {
+pdfFiller.addWatermark(sourcePDF, destinationPDF, watermarkPDF, function (err) {
     if (err) throw err;
     console.log("In callback (we're done).");
 });
